@@ -5,7 +5,14 @@ public class BookVo {
 	private String title;
 	private String status;
 	private Long authorNo;
+	private String authorName;
 	
+	public String getAuthorName() {
+		return authorName;
+	}
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
 	public Long getNo() {
 		return no;
 	}
@@ -30,13 +37,14 @@ public class BookVo {
 	public void setAuthorNo(Long authorNo) {
 		this.authorNo = authorNo;
 	}
-
 	
 	@Override
 	public String toString() {
 		return "BookVo [no=" + no + ", title=" + title + ", status=" + status + ", authorNo=" + authorNo
-				+ "]";
+				+ ", authorName=" + authorName + "]";
 	}
+
+
 
 	
 }
